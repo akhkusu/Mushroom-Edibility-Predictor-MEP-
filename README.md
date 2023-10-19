@@ -20,7 +20,9 @@ Additionally, the "FeatureAnalyzer.py" tool is used to highlight the most influe
 <br>
  
 I trained the Gaussian Naive Bayes model using 80% of the dataset and conducted performance tests, which showed outstanding results.The accuracy score reached 0.94.
-Also I created a Confusion Matric to visualize the result of the test
+Also I created a Confusion Matric to visualize the result of the test.
+
+The Mushroom Edibility Predictor (MEP) displayed false-negatives, classifying some edible mushrooms as poisonous. However, it did not produce any false-positives, correctly identifying all poisonous mushrooms as poisonous mushrooms
 
  <br/>
 <img src="img/Fig1.png" height="80%" width="80%" alt="without_rsa_module"/>
