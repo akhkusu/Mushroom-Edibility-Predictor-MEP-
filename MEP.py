@@ -45,24 +45,3 @@ for i in range(2):
 plt.show()
 
 
-
-
-
-#Random Forest Classifier for finding out the important features for prediction
-rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
-rf_classifier.fit(X_train, y_train)
-
-
-feature_importances = rf_classifier.feature_importances_
-sorted_idx = feature_importances.argsort()[::-1]
-feature_names = X.columns
-
-
-plt.figure(figsize=(20, 6))
-plt.bar(range(len(sorted_idx)), feature_importances[sorted_idx])
-plt.xticks(range(len(sorted_idx)), [feature_names[i] for i in sorted_idx], rotation=90)
-plt.xlabel('Feature')
-plt.ylabel('Feature Importance')
-plt.title('Feature Importance Plot')
-plt.show()
-
