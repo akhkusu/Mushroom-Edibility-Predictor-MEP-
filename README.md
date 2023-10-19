@@ -3,6 +3,7 @@
 
 <h2>Description</h2>
 Mushroom Edibility Predictor" (MEP) relies on the Gaussian Naive Bayes algorithm and was trained using a dataset from the UCI Machine Learning repository.
+
 Additionally, the "FeatureAnalyzer.py" tool is used to highlight the most influential features impacting the prediction process.
 <br />
 
@@ -10,29 +11,36 @@ Additionally, the "FeatureAnalyzer.py" tool is used to highlight the most influe
 <h2>Languages and Utilities Used</h2>
 
 - <b>Python</b> 
-- <b>Pycharm</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 11</b> 
+- <b>SpyderIDE</b>
+- <b>Dataset from https://www.kaggle.com/datasets/uciml/mushroom-classification/data </b> 
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
- First, I implemented key generations, encryption, and decryption without using the RSA module:
+<br>
+ 
+I trained the Gaussian Naive Bayes model using 80% of the dataset and conducted performance tests, which showed outstanding results.The accuracy score reached 0.94.
+Also I created a Confusion Matric to visualize the result of the test
+
  <br/>
-<img src="img/Screenshot 2023-08-12 142542.png" height="80%" width="80%" alt="without_rsa_module"/>
+<img src="img/Fig1.png" height="80%" width="80%" alt="without_rsa_module"/>
 <br />
 <br />
-[Link to Code](https://github.com/akhkusu/RSA-with-python/blob/5d6532f54762e5eb0d501162d01701c803a7c224/without_RSA_module.py)
+Then I analyzed the variables(features) that strongly affect the process of prediction.
+The result is shown below.
+
+Features such as  "Odor: None," "Gill Size: Narrow," and "Stalk Surface Above Ring: Silky" had high importance values.
+The results indicate that a mushroom with those features is more likely to be edible.
+
+However, their importance values  were relatively modest (ranging from 0.07 to 0.14), and some poisonous mushrooms may also share those features, so it is not recommended to rely on those features to identify the edibility of a mushroom.
+
+
+
+  <br/>
+<img src="img/Fig2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Second, I implemented the same functions and signature using the RSA module  <br/>
-<img src="img/Screenshot 2023-08-13 144021.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-[Link to Code](https://github.com/akhkusu/RSA-with-python/blob/628bc744e682e978b5be5ab7da7113ac78155a63/without_RSA_module.py)
-<br />
+
 </p>
 
 <!--
